@@ -1,4 +1,4 @@
-package cn.cqupt.mis.user;
+package cn.edu.cqupt.mis.user;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

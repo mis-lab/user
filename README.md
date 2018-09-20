@@ -1,5 +1,6 @@
 # UserSystem
-This is Mis-Lab UserSystem 
+
+用户管理与单点登录系统
 
 ### 开发环境
 

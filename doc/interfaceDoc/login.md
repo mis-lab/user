@@ -1,11 +1,11 @@
-# 登录页面接口文档
+﻿# 登录页面接口文档
 
 ### 1.登录
 
 ##### 1.url
 
     POST /session/user
-    
+
 ##### 2.参数
 
 参数|含义|类型
@@ -17,7 +17,7 @@ vCode|验证码|String
 Json示例
 
     {
-      "input":"username",
+      "input":"userName",
       "password":"123456",
       "vCode":"qw5s"
       }
@@ -43,8 +43,8 @@ Json示例
 
 ##### 1.url
 
-    GET session/user/name
-    
+    GET /session/user/name
+
 ##### 2.响应
 Json示例
 
@@ -56,11 +56,11 @@ Json示例
 
 ##### 1.url
 
-    DELETE /session/user/name
-    
+    DELETE /session/user
+
 ##### 2.响应
 Json示例
 
     {
-        “logout”：“dsy”
+        “logout”：0
     }

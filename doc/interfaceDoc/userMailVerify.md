@@ -4,13 +4,13 @@
 
 ##### 1.url
 
-    POST /user/e-mail
-    
+    GET /user/eMailCode
+
 ##### 2.请求参数
 
 参数|类型
 --|--
-e_mail|用户邮箱
+eMail|用户邮箱
 
 ##### 3.响应
 

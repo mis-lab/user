@@ -1,18 +1,14 @@
-# 个人信息页面接口文档
+﻿# 个人信息页面接口文档
 
 ### 1.用户信息获取
 
 ##### 1.url
 
-    GET /user/id
-    
-#### 2.请求参数
+    GET /session/user/info
 
-    无参
-    
-#### 3.响应
+#### 2.响应
 
-key:userPersonalMessShow
+key:user
 
 ###### 1.响应成功
 
@@ -21,12 +17,12 @@ key:userPersonalMessShow
 userName|用户名|String
 id|学号|String
 sex|性别|String
-phone_number|手机号码|String
+phoneNumber|手机号码|String
 major|专业|String
-class_number|班级|String
-study_direction|学习方向|String
+classNumber|班级|String
+studyDirection|学习方向|String
 age|年龄|int
-birth|生日|String（格式：xxxx年xx月xx日）
+birth|生日|String（格式：xxxx-xx-xx）
 labelInfo|一句话标签|String
 
 Json示例：
@@ -36,19 +32,18 @@ Json示例：
         "userName": "dsy",
         "id": "2017211005",
         "sex": "男",
-        "phone_number": "13759758663",
+        "phoneNumber": "13759758663",
         "major": "信息管理与信息系统",
-        "class_number": "03011702",
-        "study_direction": "后台",
+        "classNumber": "03011702",
+        "studyDirection": "后台",
         "age": 19,
         "birth": "1999-10-27",
         "labelInfo": "Do Your Best!!!"
+        }
     }
-}
-
 ###### 2.响应失败的几种情况
 
-|||
+###### | | |
 --|--|--
 2|未登录
 0|此功能出现问题，请联系管理员
@@ -65,19 +60,19 @@ Json示例：
 
 ##### 1.url
 
-    PUT /user/id
-    
+    PUT /user/info
+
 ##### 2.请求参数
 
 参数|含义|类型
---|--|--
+:--|--|--
 userName|用户名|String
 id|学号|String
 sex|性别|String
-phone_number|手机号码|String
+phoneNumber|手机号码|String
 major|专业|String
-class_number|班级|String
-study_direction|学习方向|String
+classNumber|班级|String
+studyDirection|学习方向|String
 age|年龄|int
 birth|生日|String（格式：xxxx年xx月xx日）
 labelInfo|一句话标签|String

@@ -1,0 +1,1 @@
+package cn.edu.cqupt.mis.user.register.model;import lombok.Data;/** * @author:dengsiyuan * @Date:2018/9/29 16:52 */@Datapublic class UserMailCode {    private String mailCode;}

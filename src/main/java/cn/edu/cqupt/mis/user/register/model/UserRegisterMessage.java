@@ -1,0 +1,1 @@
+package cn.edu.cqupt.mis.user.register.model;import lombok.Data;/** * @author:dengsiyuan * @Date:2018/9/29 9:00 */@Datapublic class UserRegisterMessage {    private String userName;    private int userId;    private String password;    private String eMail;    private String studyDirection;    private UserMailCode userMailCode;}
